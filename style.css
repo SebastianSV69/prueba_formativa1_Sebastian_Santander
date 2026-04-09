@@ -285,30 +285,78 @@ main {
 
 @media (max-width: 720px) {
   .hero {
-    padding: 64px 18px 44px;
+    padding: 56px 18px 40px;
   }
 
   .hero h1 {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 360px;
   }
 
   .overview-card,
   .tournament-card {
     padding: 24px;
   }
+
+  main {
+    padding: 34px 18px 60px;
+  }
+
+  .section-header {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 520px) {
+  .hero {
+    padding: 48px 16px 36px;
+  }
+
   .hero h1 {
     font-size: 2.4rem;
   }
 
+  .hero-text {
+    font-size: 0.98rem;
+  }
+
+  .section-header {
+    margin-bottom: 28px;
+  }
+
   .section-header h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .overview-grid,
   .tournament-grid {
     gap: 18px;
+  }
+
+  .overview-card,
+  .tournament-card {
+    padding: 20px;
+  }
+
+  .tag {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .tournament-card ul {
+    padding-left: 16px;
+  }
+
+  .footer {
+    padding: 24px 16px;
   }
 }

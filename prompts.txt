@@ -17,4 +17,4 @@ informacion que sea relevante."
 Se incorporan mas secciones de contenidos que complementen la informacion principal junto con mejoras visuales, se procede a 
 hacerlo compatible con dispositivos moviles.
 
-Etapa 4
+Etapa 4 style.css
