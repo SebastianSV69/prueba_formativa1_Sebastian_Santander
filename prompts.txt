@@ -1,0 +1,7 @@
+Etapa 1 index.html
+"Necesito que me ayudes a crear una pagina llamativa para torneos de una 
+universidad llamada "Inacap" esta debe tener una seccion de torneos 
+disponibles junto con una descripcion general"
+
+Prompts util que diseña justamente lo solicitado pero sin un diseño llamativo por lo que se procedera a una mejora visual
+Etapa 2 style.css
