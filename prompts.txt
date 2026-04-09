@@ -5,3 +5,5 @@ disponibles junto con una descripcion general"
 
 Prompts util que diseña justamente lo solicitado pero sin un diseño llamativo por lo que se procedera a una mejora visual
 Etapa 2 style.css
+"Mejora el diseño visual aplicando un estilo moderno que mejore la jerarquia visual del contenido junto con colores que sean comodos de ver"
+Prompts genera un estilo visual comodo a la vista y moderno que ordena el contenido en secciones comodas, incorporaremos mas contenido para atraer mas participantes

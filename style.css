@@ -1,0 +1,238 @@
+﻿:root {
+  --bg: #0f1a2b;
+  --bg-contrast: #13243d;
+  --surface: rgba(255,255,255,0.08);
+  --surface-strong: rgba(255,255,255,0.13);
+  --text: #f5f8ff;
+  --muted: #a8bbd4;
+  --accent: #5fc9ff;
+  --accent-strong: #6ad8ff;
+  --accent-soft: rgba(95, 201, 255, 0.18);
+  --accent-alt: #ff9f5c;
+  --border: rgba(255,255,255,0.12);
+  --shadow: 0 24px 64px rgba(3, 15, 31, 0.4);
+  --radius: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, rgba(95,201,255,0.12), transparent 28%),
+              linear-gradient(180deg, #081324 0%, #0c1d33 40%, #111f36 100%);
+  color: var(--text);
+}
+
+body {
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero {
+  padding: 80px 24px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top center, rgba(95, 201, 255, 0.16), transparent 45%),
+              radial-gradient(circle at bottom right, rgba(255, 159, 92, 0.14), transparent 30%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  color: #bbdefb;
+  background: rgba(95, 201, 255, 0.12);
+  font-size: 0.86rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+
+.hero-text {
+  margin: 24px auto 0;
+  max-width: 720px;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+  color: #07131d;
+  box-shadow: 0 18px 42px rgba(95, 201, 255, 0.22);
+}
+
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.section-header {
+  max-width: 740px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin-bottom: 16px;
+  font-size: 2.2rem;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.overview-grid,
+.tournament-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.overview-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 30px;
+}
+
+.overview-card,
+.tournament-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.overview-card h3,
+.tournament-card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+}
+
+.overview-card p,
+.tournament-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.tournaments {
+  margin-top: 64px;
+}
+
+.tournament-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.tournament-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.tournament-card:hover {
+  transform: translateY(-5px);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background: rgba(95, 201, 255, 0.16);
+  color: #d7f3ff;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.tournament-card ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.tournament-card li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 26px 24px;
+  color: rgba(255,255,255,0.72);
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 60px 18px 42px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .overview-card,
+  .tournament-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
